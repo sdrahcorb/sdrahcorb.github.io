@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Alien Abduction Order Form</title>
+	<title>Party Order Form</title>
 	<link href="css/forms.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
 </head>
@@ -10,7 +10,7 @@
 	<div class="wrapper">
 		<section>
 		  <h1>Alien Abduction Order Form</h1>
-		  <p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+		  <p>Fill out the form below to place an order for a party.</p>
 		  <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
 			<input type="hidden" name="send_to" value="brochards@gmx.com">
 			<fieldset>
@@ -24,59 +24,60 @@
 			</fieldset>
 	
 		  <fieldset>
-			  <legend>About your abduction </legend>
+			  <legend>About your party</legend>
 			<label for="date">Requested  date</label>
 			<input type="date" id="date" name="date">
-			<label for="qty">How many people would you like abducted?</label>
-			<input type="number" id="qty" name="qty" min="1" max="10">
-			<p>What type of UFO do you prefer?</p>
+			<label for="qty">How many people will be joining your party?</label>
+			<input type="number" id="qty" name="qty" min="1" max="100">
+			<p>What type of party do you prefer?</p>
 			<label>
-				<input type="radio" name="ufotype" value="Classic" checked> Classic oval UFOs
+			<input type="radio" name="partytype" value="Quirky" checked> Parties in unusual places (a museum at night, a supermarket, a former swimming pool, an empty building with character, a countryside estate, etc.) or unusual themes (a colour, a scent, a season, a country, a film, etc.)
 			</label>
 			<label>
 			  <input type="radio"
-			  name="ufotype"
-			  value="starwars"> Star Wars-style Imperial cruiser
+			  name="partytype"
+			  value="Serious"> Traditional parties for a serious event or people who like to take themselves seriously for a moment. Ironical elements available without a premium.
 			</label>
 			<label>
 			  <input type="radio"
-			  name="ufotype"
-			  value="Battlestar"> Battlestar Galactica-style Viper
+			  name="partytype"
+			  value="Silly"> You're not stupid but you like playing silly. Life is long enough that we cannot take ourselves seriously at a party. No harm done nor intended, just pure silliness to let go for a few hours.
 			</label>
 			<label>
 			  <input type="radio"
-			  name="ufotype"
-			  value="Borg-style"> Borg-style cube
+			  name="partytype"
+			  value="Regular"> You're not boring but you're not scared of boredom either. So your parties cater for all tastes but dont rock the boat. Plenty of fun to have but still some space for those who find parties boring.
 			</label>
 	
 			<label>
-			  <label for="abtype">What type of abduction experience do you want?</label>
+			  <label for="abtype">What type of party do you want?</label>
 			  <select id="abtype" name="abtype">
 				<option selected>Select one option</option>
-				<option value="tour">Tour of the solar system</option>
-				<option value="dinner">Alien dinner and discussion</option>
-				<option value="dance">Alien dance lessons</option>
-				<option value="whales">Whale watching</option>
+				<option value="tour">Tour of the town on a roofless bus </option>
+				<option value="dinner">Friendly dinner and discussion</option>
+				<option value="dance">Get down on the dance floor and shake that booty lessons to loosen even the grumpiest kid</option>
+				<option value="impro">Impro activities to loosen up the shy guys and girls and open up the nerds.</option>
+				<option value="grounded">Feet anchored (but not stuck!) to the floor, inhale, exhale, inhale etc. Help your guests relax and get into the party mood with a gentle group session.</option>
 			  </select>
 			<label for="comments">Special requests:</label>
-			<textarea ID="comments" name="comments" placeholder="Tell me everything...">Enter your ideas here</textarea>
+			<textarea ID="comments" name="comments" placeholder="Tell us what you'd like for a party...">Enter your ideas here</textarea>
 		
 			<label>
 			<input type="checkbox"
 			value="subscribe" name="subscribe" id="subscribe" checked> Add me to your email list!
 			</label>
 			</fieldset> 
-			<button type="submit">Order your abduction experience!</button> 
+			<button type="submit">Let's celebrate!</button> 
 			  </form>   
 		</section>
 		<aside>
 		  <h3>Our Location</h3>
 		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11289.259525782089!2d-93.27938871062375!3d44.97791414598544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329a75fc44b3%3A0xab6d15df00205abb!2s60%20South%206th%20St%2C%20Minneapolis%2C%20MN%2055402%2C%20USA!5e0!3m2!1sen!2sde!4v1620999336711!5m2!1sen!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		  <address>
-			Frontend Masters &middot;
-			60 South 6th Street &middot;
-			Suite 3625 &middot;
-			Minneapolis, MN 55402
+			Let's Get the Party Started
+			60 South 6th Street
+			Suite 3625
+			PartyTown, PRT 55402
 		  </address>
 		</aside>
 	  </div>
